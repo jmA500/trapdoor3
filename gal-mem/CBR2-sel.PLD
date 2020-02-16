@@ -1,0 +1,51 @@
+Name     CBR2-sel;
+PartNo   01 ;
+Date     18.04.2018 ;
+Revision 02;
+Designer Jan Metzger ;
+Company  privat ;
+Assembly TRAPDOOR ;
+Location Earth ;
+Device   G16V8MA;
+
+/* *************** INPUT PINS *********************/
+PIN 2 = SEL1;
+PIN 3 = SEL0;
+
+PIN 6 = RAS0_IN;
+PIN 7 = RAS1_IN; 
+PIN 8 = CASL_IN; 
+PIN 9 = CASU_IN;
+
+PIN 18 = REFRESH_delay;
+
+PIN 16 = NRAS_delay;
+
+/* *************** OUTPUT PINS *********************/
+PIN 12 = RAS; 
+PIN 13 = CASU;  
+PIN 14 = CASL;
+PIN 15 = A9;
+
+PIN 19 = REFRESH;
+
+PIN 17 = RAS_out;
+
+RAS.OE = 'b'1;
+CASU.OE = 'b'1;
+CASL.OE = 'b'1;
+A9.OE = 'b'1;
+REFRESH.OE = 'b'1;
+RAS_out.OE = 'b'1;
+
+REFRESH = !RAS0_IN & !RAS1_IN;
+
+!CASL = !CASL_IN # !RAS0_IN & !RAS1_IN;
+!CASU = !CASU_IN # !RAS0_IN & !RAS1_IN;
+
+!RAS = !RAS1_IN & RAS0_IN # REFRESH_delay;
+
+RAS_out = !RAS1_IN & RAS0_IN;
+A9 = SEL1 & NRAS_delay # SEL0 & !NRAS_delay;
+
+
