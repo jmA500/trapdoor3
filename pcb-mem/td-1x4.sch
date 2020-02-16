@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="6.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -57,6 +57,7 @@
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="99" name="SpiceOrder" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="100" name="Muster" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="101" name="Patch_Top" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="102" name="Vscore" color="7" fill="1" visible="yes" active="yes"/>
@@ -65,6 +66,8 @@
 <layer number="105" name="tPlate" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="106" name="bPlate" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="107" name="Crop" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="108" name="Frontplatte" color="13" fill="1" visible="yes" active="yes"/>
+<layer number="109" name="FRONTPLATTE-UMRISS" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="110" name="tdokum" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="111" name="bdokum" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="116" name="Patch_BOT" color="7" fill="1" visible="yes" active="yes"/>
@@ -14355,16 +14358,16 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/DOC0364.PDF</descripti
 <text x="-9.525" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 </package>
 <package name="HALTER2032">
-<circle x="0" y="0" radius="11.54339375" width="0.127" layer="21"/>
-<wire x1="11" y1="-3.5" x2="16.5" y2="-3.5" width="0.127" layer="21"/>
-<wire x1="16.5" y1="-3.5" x2="16.5" y2="3.5" width="0.127" layer="21"/>
-<wire x1="16.5" y1="3.5" x2="11" y2="3.5" width="0.127" layer="21"/>
-<pad name="-" x="-7" y="0" drill="1.1" diameter="3.81" shape="octagon"/>
-<pad name="+" x="14" y="0" drill="1.1" diameter="3.81" shape="octagon"/>
-<circle x="0" y="0" radius="11.2361" width="0.127" layer="21"/>
-<wire x1="11" y1="3" x2="16" y2="3" width="0.127" layer="21"/>
-<wire x1="16" y1="3" x2="16" y2="-3" width="0.127" layer="21"/>
-<wire x1="16" y1="-3" x2="11" y2="-3" width="0.127" layer="21"/>
+<circle x="1.27" y="0" radius="11.54339375" width="0.127" layer="21"/>
+<wire x1="12.27" y1="-3.5" x2="17.77" y2="-3.5" width="0.127" layer="21"/>
+<wire x1="17.77" y1="-3.5" x2="17.77" y2="3.5" width="0.127" layer="21"/>
+<wire x1="17.77" y1="3.5" x2="12.27" y2="3.5" width="0.127" layer="21"/>
+<pad name="-" x="-6" y="0" drill="1.1" diameter="3.81" shape="octagon"/>
+<pad name="+" x="14" y="0" drill="1.2" diameter="3.81" shape="octagon"/>
+<circle x="1.27" y="0" radius="11.2361" width="0.127" layer="21"/>
+<wire x1="12.524" y1="3" x2="17.27" y2="3" width="0.127" layer="21"/>
+<wire x1="17.27" y1="3" x2="17.27" y2="-3" width="0.127" layer="21"/>
+<wire x1="17.27" y1="-3" x2="12.524" y2="-3" width="0.127" layer="21"/>
 </package>
 <package name="CR2032H">
 <description>&lt;b&gt;LI BATTERY&lt;/b&gt; Varta</description>
